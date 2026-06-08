@@ -1,2 +1,192 @@
-# Asya_BD_2026
-День рождения Аси в лазертэг (10 лет, 2026 год)
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на День Рождения Аси!</title>
+    <style>
+        :root {
+            --primary-color: #6C5CE7;
+            --secondary-color: #FF7675;
+            --bg-color: #F9F9FB;
+            --text-color: #2D3436;
+            --card-bg: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #6C5CE7 0%, #a55eea 100%);
+            color: white;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(108, 92, 231, 0.2);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #F1F2F6;
+            padding-bottom: 10px;
+        }
+
+        .invitation-img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .details-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .details-list li {
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.05rem;
+        }
+
+        .details-list li::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.2rem;
+        }
+
+        .details-list li.geo::before { content: "📍"; }
+        .details-list li.date::before { content: "📅"; }
+        .details-list li.time::before { content: "⏰"; }
+
+        .wishlist-item {
+            background-color: #F8F9FA;
+            padding: 12px 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .wishlist-item strong {
+            color: #2D3436;
+        }
+
+        .iframe-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 140%; /* Высота контейнера для отображения формы без прокрутки внутри */
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            color: #95A5A6;
+            font-size: 0.9rem;
+            margin-top: 40px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Асе 10 лет! 🎉</h1>
+            <p class="subtitle">Приглашаем на день рождения</p>
+        </header>
+
+        <section id="invitation">
+            <h2>Приглашение</h2>
+            <img src="https://i.ibb.co/PG9WLQX1/1780072939275.png" alt="Рисунок Аси" class="invitation-img">
+            
+            <p>Ася приглашает вас на свой день рождения! Чтобы сочетать обязательную для 10-летнего ребёнка физическую активность с безудержным весельем праздника, был выбран формат игры в <strong>Лазертаг</strong>. Разумеется, без перекуса и торта дело тоже не обойдется! Обязательно приходите!</p>
+            
+            <ul class="details-list">
+                <li class="geo"><strong>Где:</strong> Salting Hospitalet<br><small style="color:#636e72;">Travessia Industrial 109, 08907 L’Hospitalet de Llobregat, BCN</small></li>
+                <li class="date"><strong>Дата:</strong> 21 июня 2026 (воскресенье)</li>
+                <li class="time"><strong>Время:</strong> 12:00</li>
+            </ul>
+        </section>
+
+        <section id="gifts">
+            <h2>Что подарить? 🎁</h2>
+            <p style="margin-bottom: 15px;">Если вы хотите порадовать Асю, вот список вещей, которыми она сейчас увлекается. Но помните, что самый главный подарок — это ваше участие!</p>
+            
+            <div class="wishlist-item"><strong>LEGO:</strong> любое (кроме машин, цветов и механизмов), в приоритете — дома.</div>
+            <div class="wishlist-item"><strong>Всё для рисования:</strong> альбомы с плотной бумагой, фломастеры любых мастей и цветов, ручки, линеры и любые прочие приспособления.</div>
+            <div class="wishlist-item"><strong>Настольные игры:</strong> для любого количества людей и любого формата (уже есть только самые распространенные типа Уно, Добль, 4 в ряд).</div>
+            <div class="wishlist-item"><strong>Наборы для творчества:</strong> создание своих брелков, фломастеров, мыла — чего угодно, для создания чего-то своего.</div>
+            <div class="wishlist-item"><strong>Дамплинги:</strong> кто знает — тот знает. 😉</div>
+            <div class="wishlist-item"><strong>Милые животные:</strong> что угодно с их изображением.</div>
+            <div class="wishlist-item"><strong>Сюрприз:</strong> абсолютно любой подарок на ваш вкус!</div>
+        </section>
+
+        <section id="rsvp">
+            <h2>Подтвердите участие ✍️</h2>
+            <p style="margin-bottom: 20px; color: #636e72;">Пожалуйста, заполните форму ниже, чтобы мы знали, сколько гостей планирует быть и какую еду заказать.</p>
+            
+            <div class="iframe-container">
+                <iframe src="https://forms.gle/pHxUioUfx617CqE99">Загрузка...</iframe>
+            </div>
+        </section>
+
+        <footer>
+            <p>Ждем вас на празднике! 🎂</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
